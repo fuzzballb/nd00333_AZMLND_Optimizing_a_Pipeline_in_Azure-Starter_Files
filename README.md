@@ -31,5 +31,4 @@ AutoML uses different Machine learning algorithms like RandomForest, LightGBM, G
 The difference between the algorithm that was found by AutoML ( MaxAbsScaler LightGBM accucracy 0.9161) and the Hyperdrive (Logistic regression accuracy 0.9156) was very minor. This can be because the Hyperdrive got lucky with selecting the right random value and/or that the data and corresponding label was well suited for logistic regression. 
 
 ## Future work
-As stated under Scikit-learn Pipeline it would help if the RandomParameterSampling of hyperdrive would be extended with continuing to search in the area of the best random samples. Using BayesianParameterSampling will do that, and find hyperparameters that are ideal for training the model. 
-
+As stated under Scikit-learn Pipeline it would help if the RandomParameterSampling of hyperdrive would be extended with continuing to search in the area of the best random samples. Using BayesianParameterSampling will do that, and find hyperparameters that are ideal for training the model. In our case this would give the ideal Regulaization penalty (--c), which would avoid overfitting of the model to our data, but still give acurate predictions, and also determain what is the best amount of maximum itterations.
